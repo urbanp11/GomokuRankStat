@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1">
+
+        <!-- rank -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/tv_rank"
+            android:layout_gravity="left|center_vertical" />
+
+        <!-- icon -->
+        <ImageView
+            android:id="@+id/iv_flag"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:contentDescription="icon"
+            />
+
+        <!-- name -->
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="166dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textSize="22sp"
+            android:layout_alignTop="@+id/tv_elo"
+            android:layout_alignBottom="@+id/iv_flag"
+            android:layout_toEndOf="@+id/iv_flag" />
+
+        <!-- elo -->
+        <TextView
+            android:id="@+id/tv_elo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textSize="22sp"
+            android:layout_alignTop="@+id/iv_flag"
+            android:layout_toEndOf="@+id/tv_name" />
+
+    </LinearLayout>
+
+</RelativeLayout>
